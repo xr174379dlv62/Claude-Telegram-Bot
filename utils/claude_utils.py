@@ -18,7 +18,7 @@ class Claude:
         self.prompt = self.prompt[: self.prompt.rfind(HUMAN_PROMPT)]
 
     def change_model(self, model):
-        valid_models = {"claude-2", "claude-instant-1"}
+        valid_models = {"claude-2","claude-1", "claude-1-100k", "claude-instant-1", "claude-instant-1-100k", "claude-1.3", "claude-1.3-100k", "claude-1.2", "claude-1.0", "claude-instant-1.1", "claude-instant-1.1-100k", "claude-instant-1.0" }
         if model in valid_models:
             self.model = model
             return True
